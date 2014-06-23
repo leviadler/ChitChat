@@ -16,7 +16,13 @@ $(document).ready(function() {
   });
   
   chat.socket.on('broadcast', function(data) {
-    $li = $("<li></li>").text(data.username + ": " + data.text);
+    $li = $("<li></li>");
+    
+    if(data.username === "Notice") {
+      $li.addClass("notice");
+    }
+    
+    $li.text(data.username + ": " + data.text);
     $(".chat").append($li);
   });
   
