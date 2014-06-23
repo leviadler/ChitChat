@@ -12,6 +12,8 @@
   Chat.prototype.processCommand = function(command, args) {
     if(command === "/nick") {
       this.socket.emit("nicknameChangeRequest", args);
+    } else if(command === "/join") {
+      this.socket.emit("roomChangeRequest", args);
     } else {
       alert("command not recognized!");
     }

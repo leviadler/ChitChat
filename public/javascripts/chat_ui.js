@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var socket = io.connect();
+  
   var chat = new ChatApp.Chat(socket);
   
   $('.message-form').on('submit', function(event) {
