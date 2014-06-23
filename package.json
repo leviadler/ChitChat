@@ -1,7 +1,7 @@
 {
     "name": "chat-app",
     "description": "node chat app",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "private": true,
     "dependencies": {
       "socket.io": "~0.9.6",
