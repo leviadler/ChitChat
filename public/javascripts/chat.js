@@ -1,8 +1,12 @@
 (function(root){
-  var Chat = root.Chat = (root.Chat || {});
+  var ChatApp = root.ChatApp = (root.ChatApp || {});
   
-  var sendMessage = Chat.sendMessage = function(message) {
-    io.sockets.emit("message", {text: message} );
+  var Chat = ChatApp.Chat = function(socket) {
+    this.socket = socket;
+  }
+  
+  Chat.prototype.sendMessage = function(message) {
+    this.socket.emit("message", {text: message} );
   }
 
 

@@ -7,6 +7,7 @@
       height: 300px;
       width: 300px;
       border: 1px solid black;
+      list-style: none;
     }
     
     </style>
@@ -14,19 +15,21 @@
     </script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="public/javascripts/chat.js"></script>
+    <script src="public/javascripts/chat_ui.js"></script>
+    
     <title>Chat App</title>
   </head>
   <body>
     <h1>Chat App</h1>
     
-    <div class="chat">
+    <ul class="chat">
       
-    </div>
+    </ul>
     <br>
     
-    <form class="message">
-      <input type="text" name="message">
-      <button>Send Message!</button>
+    <form class="message-form">
+      <input type="text" name="message" id="message">
+      <input type="submit" value="Send Chat!">
     </form>
   </body>
 
