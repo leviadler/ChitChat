@@ -1,7 +1,7 @@
 #Chat App
 ===
 
-####A low level node.js chat application using socket.io.
+####A node.js chat application using socket.io.
 
 ####Features:
 - Chat with other users
