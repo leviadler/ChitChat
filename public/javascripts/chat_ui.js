@@ -24,12 +24,18 @@ $(document).ready(function() {
     
     $li.text(data.username + ": " + data.text);
     $(".chat").append($li);
+    scrollToBottom();
   });
   
   chat.socket.on("nicknameChangeResult", function(data) {
     $li = $("<li></li>").text(data.text);
     $(".chat").append($li);
+    scrollToBottom();
   })
+  
+  var scrollToBottom = function(){
+    $(".chat").animate( {scrollTop: $(".chat")[0].scrollHeight}, 300);
+  }
   
   
 })
