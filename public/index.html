@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+
     <style>
-    
+
       html, body, div, ul, li, h1 {
         margin: 0;
         padding: 0;
         border: 0;
         font: inherit;
       }
-      
+
       input[type="submit"], input[type="text"] {
           -webkit-appearance: none;
           display: inline;
@@ -25,11 +25,11 @@
           background: transparent;
           color: inherit;
         }
-    
+
       body {
         font-family: sans-serif;
       }
-      
+
       h1 {
         text-align: center;
         display: block;
@@ -38,7 +38,7 @@
         color: darkgreen;
         padding-top: 10px;
       }
-      
+
       .chat-window {
         padding: 40px;
         width: 400px;
@@ -46,7 +46,7 @@
         display: block;
         margin: auto;
       }
-     
+
       .chat {
         height: 300px;
         width: 300px;
@@ -57,70 +57,70 @@
         padding: 5px;
         border-radius: 5px;
       }
-    
+
       .chat > li {
         color: green;
         padding: 2px;
       }
-      
+
       .chat > li.notice {
         color: red;
       }
-      
+
       .message-form input[type="submit"] {
         border: 2px solid green;
         background: lightgreen;
         padding: 5px;
         border-radius: 5px;
       }
-      
+
       #message {
         border: 1px solid black;
         padding: 5px;
         border-radius: 2px;
       }
-      
+
       #message:focus {
         border: 1px solid green;
       }
-      
+
       .message-form {
         text-align: center;
         display: block;
         margin: auto;
       }
-      
+
       .legend {
         width: 400px;
         text-align: center;
         margin: auto;
       }
-    
-  
-    
+
+
+
     </style>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
     </script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="public/javascripts/chat.js"></script>
     <script src="public/javascripts/chat_ui.js"></script>
-    
-    <title>Chat App</title>
+
+    <title>ChitChat</title>
   </head>
   <body>
-    <h1>Chat App</h1>
+    <h1>ChitChat</h1>
     <div class="chat-window">
-    
+
       <ul class="chat">
-      
+
       </ul>
       <br>
-    
+
       <form class="message-form">
         <input type="text" name="message" id="message">
         <input type="submit" value="Send Chat!" >
       </form>
-      
+
       <div class="legend">
       <p>Change display name: '/nick [your-nickname]'</p>
       <p>Switch between rooms: '/join [new-room]'</p>
