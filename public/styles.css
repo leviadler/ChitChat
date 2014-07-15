@@ -1,0 +1,91 @@
+    html, body, div, ul, li, h1 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+      }
+
+      input[type="submit"], input[type="text"] {
+          -webkit-appearance: none;
+          display: inline;
+          box-sizing: content-box;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+          width: auto;
+          font: inherit;
+          vertical-align: baseline;
+          background: transparent;
+          color: inherit;
+        }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-size: 60px;
+        color: darkgreen;
+        padding-top: 10px;
+      }
+
+      .chat-window {
+        padding: 40px;
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+      }
+
+      .chat {
+        height: 300px;
+        width: 300px;
+        border: 2px solid darkgreen;
+        list-style: none;
+        overflow: auto;
+        margin: auto;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .chat > li {
+        color: green;
+        padding: 2px;
+      }
+
+      .chat > li.notice {
+        color: red;
+      }
+
+      .message-form input[type="submit"] {
+        border: 2px solid green;
+        background: lightgreen;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #message {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 2px;
+      }
+
+      #message:focus {
+        border: 1px solid green;
+      }
+
+      .message-form {
+        text-align: center;
+        display: block;
+        margin: auto;
+      }
+
+      .legend {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+      }
